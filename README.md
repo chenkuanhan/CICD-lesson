@@ -1,11 +1,224 @@
-# CICD-lesson
+[git_branch.txt](https://github.com/user-attachments/files/15756747/git_branch.txt)# CICD-lesson
+### 參考檔案
+[git_pull.pdf](https://github.com/user-attachments/files/15756066/git_pull.pdf)
+[git fetch & git pull.txt](https://github.com/user-attachments/files/15756014/git.fetch.git.pull.txt)
+
+[Uploading git_branWindows PowerShell
+著作權（C） Microsoft Corporation。保留擁有權利。
+
+安裝最新的 PowerShell 以取得新功能和改進功能！https://aka.ms/PSWindows
+
+PS C:\Users\Asus> cd C:\Users\Asus\Documents\Web-lesson
+PS C:\Users\Asus\Documents\Web-lesson> git init
+Initialized empty Git repository in C:/Users/Asus/Documents/Web-lesson/.git/
+PS C:\Users\Asus\Documents\Web-lesson> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\346\210\220\347\202\272\347\266\262\351\240\201\350\250\255\350\250\210\345\270\253\347\232\204\347\254\254\344\270\200\346\255\245/"
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Asus\Documents\Web-lesson> git remote origin https://github.com/chenkuanhan/Web-lesson.git
+error: unknown subcommand: `origin'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+PS C:\Users\Asus\Documents\Web-lesson> git remote add origin https://github.com/chenkuanhan/Web-lesson.git
+PS C:\Users\Asus\Documents\Web-lesson> git remote -v
+origin  https://github.com/chenkuanhan/Web-lesson.git (fetch)
+origin  https://github.com/chenkuanhan/Web-lesson.git (push)
+PS C:\Users\Asus\Documents\Web-lesson> git remote
+origin
+PS C:\Users\Asus\Documents\Web-lesson> git branch -v
+PS C:\Users\Asus\Documents\Web-lesson> git pull origin master
+remote: Enumerating objects: 628, done.
+remote: Counting objects: 100% (628/628), done.
+remote: Compressing objects: 100% (482/482), done.
+remote: Total 628 (delta 111), reused 627 (delta 110), pack-reused 0
+Receiving objects: 100% (628/628), 691.23 KiB | 832.00 KiB/s, done.
+Resolving deltas: 100% (111/111), done.
+From https://github.com/chenkuanhan/Web-lesson
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+PS C:\Users\Asus\Documents\Web-lesson> start .
+PS C:\Users\Asus\Documents\Web-lesson> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\346\210\220\347\202\272\347\266\262\351\240\201\350\250\255\350\250\210\345\270\253\347\232\204\347\254\254\344\270\200\346\255\245/"
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Asus\Documents\Web-lesson> git add .
+error: '成為網頁設計師的第一步/' does not have a commit checked out
+fatal: adding files failed
+PS C:\Users\Asus\Documents\Web-lesson> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\346\210\220\347\202\272\347\266\262\351\240\201\350\250\255\350\250\210\345\270\253\347\232\204\347\254\254\344\270\200\346\255\245/"
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Asus\Documents\Web-lesson> start .
+PS C:\Users\Asus\Documents\Web-lesson> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        The_first_step_for_a_web_designer/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Asus\Documents\Web-lesson> git add .
+error: 'The_first_step_for_a_web_designer/' does not have a commit checked out
+fatal: adding files failed
+PS C:\Users\Asus\Documents\Web-lesson> git add --all
+error: 'The_first_step_for_a_web_designer/' does not have a commit checked out
+fatal: adding files failed
+PS C:\Users\Asus\Documents\Web-lesson> git log
+commit 6d6921c6a1e86bdc620d53ddf7fa8a5b2dc36520 (HEAD -> master, origin/master)
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 20:16:47 2024 +0800
+
+    5 commit
+
+commit 1c2657e7dec48a9a8cbacbdc5c3d03071b4ee04b
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 20:13:08 2024 +0800
+
+    4 commit
+
+commit 53f1235a0a1fc685dd198acd99ca7a99e3e32b2b
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 14:30:17 2024 +0800
+
+    3rd commit
+
+commit f6bb90390b75bcb8d8c717470d1bea437f57ec85
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 14:09:27 2024 +0800
+
+    2nd commit
+
+commit 790c7e5ad9cd7dc0376b16f711336e0fb543bbb0
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 13:48:52 2024 +0800
+
+    first commit
+PS C:\Users\Asus\Documents\Web-lesson>
+PS C:\Users\Asus\Documents\Web-lesson> git add .
+error: 'The_first_step_for_a_web_designer/' does not have a commit checked out
+fatal: adding files failed
+PS C:\Users\Asus\Documents\Web-lesson> start .
+PS C:\Users\Asus\Documents\Web-lesson> git remote
+origin
+PS C:\Users\Asus\Documents\Web-lesson> git remote -v
+origin  https://github.com/chenkuanhan/Web-lesson.git (fetch)
+origin  https://github.com/chenkuanhan/Web-lesson.git (push)
+PS C:\Users\Asus\Documents\Web-lesson> git add .
+warning: in the working copy of 'The_first_step_for_a_web_designer/style.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'The_first_step_for_a_web_designer/練習檔.html', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\Asus\Documents\Web-lesson> git add --all
+PS C:\Users\Asus\Documents\Web-lesson> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   The_first_step_for_a_web_designer/0.html
+        new file:   The_first_step_for_a_web_designer/0.txt
+        new file:   The_first_step_for_a_web_designer/01.html
+        new file:   The_first_step_for_a_web_designer/01.png
+        new file:   The_first_step_for_a_web_designer/01.txt
+        new file:   The_first_step_for_a_web_designer/02.html
+        new file:   The_first_step_for_a_web_designer/02.txt
+        new file:   The_first_step_for_a_web_designer/03/03.html
+        new file:   The_first_step_for_a_web_designer/03/03.txt
+        new file:   The_first_step_for_a_web_designer/03/style.css
+        new file:   The_first_step_for_a_web_designer/04/04-1.png
+        new file:   The_first_step_for_a_web_designer/04/04-1.txt
+        new file:   The_first_step_for_a_web_designer/04/04-2.png
+        new file:   The_first_step_for_a_web_designer/04/04-2.txt
+        new file:   The_first_step_for_a_web_designer/04/04-3.txt
+        new file:   The_first_step_for_a_web_designer/04/Layout01.html
+        new file:   The_first_step_for_a_web_designer/04/header_nav_main.png
+        new file:   "The_first_step_for_a_web_designer/04/header\350\243\241\351\235\242\346\234\211nav.png"
+        new file:   The_first_step_for_a_web_designer/04/layout02.html
+        new file:   The_first_step_for_a_web_designer/05.html
+        new file:   The_first_step_for_a_web_designer/05.txt
+        new file:   "The_first_step_for_a_web_designer/HTML_CSS\347\267\264\347\277\222\346\252\224.zip"
+        new file:   The_first_step_for_a_web_designer/style.css
+        new file:   "The_first_step_for_a_web_designer/\345\215\200\345\241\212\345\205\203\347\264\240\345\217\212\350\241\214\345\205\247\345\205\203\347\264\240.png"
+        new file:   "The_first_step_for_a_web_designer/\347\267\264\347\277\222\346\252\224.html"
+        new file:   "The_first_step_for_a_web_designer/\351\207\221\351\255\232\351\203\275\350\203\275\346\207\202\347\266\262\351\240\201\350\250\255\350\250\210\345\205\245\351\226\200/temp.html"
+
+PS C:\Users\Asus\Documents\Web-lesson> git branch
+* master
+PS C:\Users\Asus\Documents\Web-lesson> git branch -m branch2
+PS C:\Users\Asus\Documents\Web-lesson> git branch
+* branch2
+PS C:\Users\Asus\Documents\Web-lesson> git remote -v
+origin  https://github.com/chenkuanhan/Web-lesson.git (fetch)
+origin  https://github.com/chenkuanhan/Web-lesson.git (push)
+PS C:\Users\Asus\Documents\Web-lesson> git push origin branch2
+Everything up-to-date
+PS C:\Users\Asus\Documents\Web-lesson> git log
+commit 6d6921c6a1e86bdc620d53ddf7fa8a5b2dc36520 (HEAD -> branch2, origin/master, origin/branch2)
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 20:16:47 2024 +0800
+
+    5 commit
+
+commit 1c2657e7dec48a9a8cbacbdc5c3d03071b4ee04b
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 20:13:08 2024 +0800
+
+    4 commit
+
+commit 53f1235a0a1fc685dd198acd99ca7a99e3e32b2b
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 14:30:17 2024 +0800
+
+    3rd commit
+
+commit f6bb90390b75bcb8d8c717470d1bea437f57ec85
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 14:09:27 2024 +0800
+
+    2nd commit
+
+commit 790c7e5ad9cd7dc0376b16f711336e0fb543bbb0
+Author: Hank <kuanc1784@gmail.com>
+Date:   Sun Jun 9 13:48:52 2024 +0800
+
+    first commit
+PS C:\Users\Asus\Documents\Web-lesson>
+ch.txt…]()
+
+
+
+
+
+
+
 
 ## git fetch & git pull
-[git_pull.pdf](https://github.com/user-attachments/files/15756066/git_pull.pdf)
+
 
 
 **第一個實驗:(git pull origin master)**
-[git fetch & git pull.txt](https://github.com/user-attachments/files/15756014/git.fetch.git.pull.txt)
+
 
 ```
 Windows PowerShell
