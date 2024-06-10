@@ -1,4 +1,4 @@
-# CICD-lesson
+[git.fetch.git.pull.txt](https://github.com/user-attachments/files/15756768/git.fetch.git.pull.txt)# CICD-lesson
 
 
 ### 參考檔案
@@ -6,6 +6,7 @@
 [git_pull.pdf](https://github.com/user-attachments/files/15756066/git_pull.pdf)
 [git fetch & git pull.txt](https://github.com/user-attachments/files/15756014/git.fetch.git.pull.txt)
 
+[Uploading git.fetch.git.pull.txt…]()
 
 
 [Uploading git_branch.txt…]()
@@ -14,7 +15,7 @@
 
 
 
-
+---
 
 ## git fetch & git pull
 
