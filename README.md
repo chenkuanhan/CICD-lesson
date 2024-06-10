@@ -2,12 +2,13 @@
 
 ## git fetch & git pull
 
+
+**第一個實驗:(git pull origin master)**
 [git fetch & git pull.txt](https://github.com/user-attachments/files/15756014/git.fetch.git.pull.txt)
 
 ```
 Windows PowerShell
 著作權（C） Microsoft Corporation。保留擁有權利。
-
 安裝最新的 PowerShell 以取得新功能和改進功能！https://aka.ms/PSWindows
 
 PS C:\Users\Asus> cd C:\Users\Asus\Documents\CICD-lesson
