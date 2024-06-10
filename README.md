@@ -5,13 +5,9 @@
 
 
 [git_branch.txt](https://github.com/user-attachments/files/15756747/git_branch.txt)
+
 [git_pull.pdf](https://github.com/user-attachments/files/15756066/git_pull.pdf)
-[git fetch & git pull.txt](https://github.com/user-attachments/files/15756014/git.fetch.git.pull.txt)
 
-[Uploading git.fetch.git.pull.txt…]()
-
-
-[Uploading git_branch.txt…]()
 
 
 
