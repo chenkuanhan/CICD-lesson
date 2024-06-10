@@ -161,7 +161,7 @@ PS C:\Users\Asus\Documents\筆記>
 
 ```
 
-**第二個實驗**
+**第二個實驗:(git fetch)**
 ```
 PS C:\Users\Asus\Documents\筆記> git log
 commit 27e41abf6821f06b79baabeeac721107a985f76d (HEAD -> master)
@@ -224,7 +224,10 @@ PS C:\Users\Asus\Documents\筆記>
 
 ```
 
-**第三個實驗**
+**第三個實驗:
+1.git fetch
+2.git pull origin master
+**
 
 ```
 PS C:\Users\Asus\Documents\筆記> git log
