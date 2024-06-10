@@ -160,3 +160,70 @@ To https://github.com/chenkuanhan/CICD-lesson.git
 PS C:\Users\Asus\Documents\筆記>
 
 ```
+
+**第二個實驗**
+```
+PS C:\Users\Asus\Documents\筆記> git log
+commit 27e41abf6821f06b79baabeeac721107a985f76d (HEAD -> master)
+Author: Hank <kuanc1784@gmail.com>
+Date:   Mon Jun 10 11:40:03 2024 +0800
+
+    local 5th total 9th commits
+
+commit 742cbcc8da6ba78c9da1c1036e802d33bfa0e798 (origin/master)
+Author: Hank <kuanc1784@gmail.com>
+Date:   Mon Jun 10 11:08:53 2024 +0800
+
+    update file:note.md
+
+commit c8aebcb33cdb20476efad5f640d1104bfdebeedd
+Author: chenkuanhan <104495841+chenkuanhan@users.noreply.github.com>
+Date:   Mon Jun 10 11:00:21 2024 +0800
+
+    Update README.md
+
+commit 3bc9589ea0a7bce1f24b6cd36ca1a198d7a30266
+Author: chenkuanhan <104495841+chenkuanhan@users.noreply.github.com>
+Date:   Mon Jun 10 10:57:44 2024 +0800
+
+    Initial commit
+PS C:\Users\Asus\Documents\筆記> git fetch
+remote: Enumerating objects: 41, done.
+remote: Counting objects: 100% (41/41), done.
+remote: Compressing objects: 100% (39/39), done.
+remote: Total 39 (delta 16), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (39/39), 18.90 KiB | 261.00 KiB/s, done.
+From https://github.com/chenkuanhan/CICD-lesson
+   742cbcc..920a8fc  master     -> origin/master
+PS C:\Users\Asus\Documents\筆記> git log
+commit 27e41abf6821f06b79baabeeac721107a985f76d (HEAD -> master)
+Author: Hank <kuanc1784@gmail.com>
+Date:   Mon Jun 10 11:40:03 2024 +0800
+
+    local 5th total 9th commits
+
+commit 742cbcc8da6ba78c9da1c1036e802d33bfa0e798
+Author: Hank <kuanc1784@gmail.com>
+Date:   Mon Jun 10 11:08:53 2024 +0800
+
+    update file:note.md
+
+commit c8aebcb33cdb20476efad5f640d1104bfdebeedd
+Author: chenkuanhan <104495841+chenkuanhan@users.noreply.github.com>
+Date:   Mon Jun 10 11:00:21 2024 +0800
+
+    Update README.md
+
+commit 3bc9589ea0a7bce1f24b6cd36ca1a198d7a30266
+Author: chenkuanhan <104495841+chenkuanhan@users.noreply.github.com>
+Date:   Mon Jun 10 10:57:44 2024 +0800
+
+    Initial commit
+PS C:\Users\Asus\Documents\筆記>
+
+
+```
+
+
+
+
