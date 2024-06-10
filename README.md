@@ -1,8 +1,8 @@
 # CICD-lesson
 ### 參考檔案
-[git.fetch.git.pull.txt](https://github.com/user-attachments/files/15756768/git.fetch.git.pull.txt)
 
 
+[git-fetch&git-pull.txt](https://github.com/user-attachments/files/15756787/git-fetch.git-pull.txt)
 
 [git_branch.txt](https://github.com/user-attachments/files/15756747/git_branch.txt)
 
