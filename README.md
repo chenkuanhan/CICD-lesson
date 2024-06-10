@@ -1,6 +1,7 @@
 # CICD-lesson
 
 ## git fetch & git pull
+[git_pull.pdf](https://github.com/user-attachments/files/15756066/git_pull.pdf)
 
 
 **第一個實驗:(git pull origin master)**
